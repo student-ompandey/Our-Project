@@ -36,11 +36,13 @@ main {
 #services {
   padding: 10px 20px;
   background: var(--white-color);
+  font-family: var(--outfit);
+  margin-top: 3rem;
 }
 
 .services-container {
   display: grid;
-   grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
   align-items: flex-start;
   gap: 60px;
 }
@@ -56,21 +58,20 @@ main {
   padding: 5px 15px;
   border-radius: 9999px;
   margin-bottom: 10px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   font-weight: 500;
   background: linear-gradient(to right, #000 50%, #fff 50%);
   color: #000;
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.4s ease;
+  font-family: var(--outfit);
 }
-
 
 .services-intro .tag:hover {
-  background-position: left bottom; 
+  background-position: left bottom;
   color: #fff;
 }
-
 
 .services-intro h2 {
   font-size: 42px;
@@ -87,7 +88,7 @@ main {
   background: #000;
   color: var(--white-color);
   padding: 12px 28px;
-  border-radius: 9999px; 
+  border-radius: 9999px;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -95,7 +96,7 @@ main {
 }
 
 .services-intro .btn:hover {
-  background: var( --grey-color);
+  background: var(--grey-color);
   transform: translateY(-2px);
 }
 
@@ -115,42 +116,42 @@ main {
   transition: all 0.3s ease;
   min-height: 210px;
   /* min-width:px; */
-  width:85%;
-   position: relative;
+  width: 85%;
+  position: relative;
 }
 
 .card h3 {
   margin-bottom: 10px;
-  font-size:24px;
-  font-weight:600;
-  position:relative;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
   padding-top: 20px;
 }
 
 .card h3::before {
   content: "";
   position: absolute;
-  top: 0;            /* bilkul upar */
+  top: 0; /* bilkul upar */
   left: 0;
-  width: 40px;       /* line ki length */
-  height: 2px;       /* line ki thickness */
-  background: #000;  /* line ka color */
+  width: 40px; /* line ki length */
+  height: 2px; /* line ki thickness */
+  background: #000; /* line ka color */
   border-radius: 2px;
 }
 
 .card p {
   font-size: 15px;
   line-height: 1.5;
-  color: var( --grey-color);
-  margin:0;
+  color: var(--grey-color);
+  margin: 0;
 }
 
 .card i {
-  position: absolute;   
-  bottom: 20px;         
-  right: 20px;          
-  font-size: 22px;      
-  color: #000;          
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 22px;
+  color: #000;
   cursor: pointer;
 }
 
@@ -159,24 +160,21 @@ main {
   color: var(--white-color);
 }
 
-.card.dark i{
-  color:white;
+.card.dark i {
+  color: white;
 }
 
 .card.dark h3::before {
-  background: #fff;  /* white line for dark background */
+  background: #fff; /* white line for dark background */
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
 
-.card.dark{
-  min-height:250px;
+.card.dark {
+  min-height: 250px;
 }
-
-
-
 
 /* hero section  */
 
@@ -281,4 +279,3 @@ nav a {
   padding: 3rem;
   display: flex;
 }
-
