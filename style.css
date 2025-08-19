@@ -36,6 +36,7 @@ main {
 #services {
   padding: 10px 20px;
   background: var(--white-color);
+  font-family:var(--outfit);
 }
 
 .services-container {
