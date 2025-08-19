@@ -23,12 +23,10 @@ body {
 body {
   background-color: var(--white-color);
   color: var(--black-color);
+  overflow-x: hidden;
 }
 
 main {
-  background-color: aqua;
-}
-
-h1 {
-  font-family: var(--outfit);
+  height: 100%;
+  margin: 1rem 2rem;
 }
