@@ -31,6 +31,153 @@ main {
   margin: 1rem 2rem;
 }
 
+/* Servise section  */
+/* Section Styling */
+#services {
+  padding: 10px 20px;
+  background: var(--white-color);
+}
+
+.services-container {
+  display: grid;
+   grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* Left Part */
+/* .services-intro {
+  flex: 1;
+} */
+
+.services-intro .tag {
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 9999px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  font-weight: 500;
+  background: linear-gradient(to right, #000 50%, #fff 50%);
+  color: #000;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.4s ease;
+}
+
+
+.services-intro .tag:hover {
+  background-position: left bottom; 
+  color: #fff;
+}
+
+
+.services-intro h2 {
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.services-intro p {
+  margin-bottom: 20px;
+  color: var(--black-color);
+}
+
+.services-intro .btn {
+  display: inline-block;
+  background: #000;
+  color: var(--white-color);
+  padding: 12px 28px;
+  border-radius: 9999px; 
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.services-intro .btn:hover {
+  background: var( --grey-color);
+  transform: translateY(-2px);
+}
+
+/* Right Part */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.card {
+  background: var(--white-color);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+  min-height: 210px;
+  /* min-width:px; */
+  width:85%;
+   position: relative;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size:24px;
+  font-weight:600;
+  position:relative;
+  padding-top: 20px;
+}
+
+.card h3::before {
+  content: "";
+  position: absolute;
+  top: 0;            /* bilkul upar */
+  left: 0;
+  width: 40px;       /* line ki length */
+  height: 2px;       /* line ki thickness */
+  background: #000;  /* line ka color */
+  border-radius: 2px;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var( --grey-color);
+  margin:0;
+}
+
+.card i {
+  position: absolute;   
+  bottom: 20px;         
+  right: 20px;          
+  font-size: 22px;      
+  color: #000;          
+  cursor: pointer;
+}
+
+.card.dark {
+  background: #000;
+  color: var(--white-color);
+}
+
+.card.dark i{
+  color:white;
+}
+
+.card.dark h3::before {
+  background: #fff;  /* white line for dark background */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card.dark{
+  min-height:250px;
+}
+
+
+
+
 /* hero section  */
 
 .hero {
@@ -72,6 +219,58 @@ nav a {
   font-size: 1.25rem;
   font-family: var(--outfit);
   border-radius: 5rem;
+  text-decoration: none;
+}
+
+.hero-cont {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.text-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+}
+
+.text-box h1 {
+  font-family: var(--outfit);
+  color: var(--black-color);
+  font-size: 10rem;
+  font-weight: 250;
+}
+
+.img-box {
+  width: 40%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 90%;
+}
+
+.img-cont img {
+  width: 17.5rem;
+  border-radius: 1rem;
+}
+
+.text-cont {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.text-cont p {
+  font-family: var(--outfit);
+  color: var(--black-color);
+  text-align: right;
+  font-size: 1.5rem;
 }
 
 .slide {
