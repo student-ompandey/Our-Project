@@ -73,3 +73,13 @@ nav a {
   font-family: var(--outfit);
   border-radius: 5rem;
 }
+
+.slide {
+  /* display: grid; */
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  display: flex;
+}
+
