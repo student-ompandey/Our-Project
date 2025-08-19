@@ -30,3 +30,40 @@ main {
   height: 100%;
   margin: 1rem 2rem;
 }
+
+#service{
+  padding:60px 80px;
+  display :flex;
+  justify-content :space-between;
+  aling-item :flex-start;
+  gap: 40px;
+}
+
+.service-intro{
+  flex :1;
+}
+
+.services-grid{
+  flex:2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+.card {
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.card.dark {
+  background: #000;
+  color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
