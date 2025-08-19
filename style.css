@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbit&family=Outfit:wght@100..900&display=swap");
+
 :root {
   --white-color: #f8f9fa;
   --black-color: #212529;
   --grey-color: #adb5bd;
+  --orbit: "Orbit";
+  --outfit: "Outfit";
 }
 
 * {
@@ -19,4 +23,12 @@ body {
 body {
   background-color: var(--white-color);
   color: var(--black-color);
+}
+
+main {
+  background-color: aqua;
+}
+
+h1 {
+  font-family: var(--outfit);
 }
