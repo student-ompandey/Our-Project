@@ -30,3 +30,46 @@ main {
   height: 100%;
   margin: 1rem 2rem;
 }
+
+/* hero section  */
+
+.hero {
+  height: 100dvh;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-family: var(--outfit);
+  font-size: 2rem;
+}
+
+nav a {
+  font-family: var(--outfit);
+  color: var(--black-color);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.btn {
+  background-color: transparent;
+  color: var(--black-color);
+  border: 2px solid var(--black-color);
+  padding: 0.5rem 0.75rem;
+  font-size: 1.25rem;
+  font-family: var(--outfit);
+  border-radius: 5rem;
+}
