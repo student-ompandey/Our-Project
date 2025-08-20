@@ -3,7 +3,8 @@
 :root {
   --white-color: #f8f9fa;
   --black-color: #212529;
-  --grey-color: #adb5bd;
+  --grey-color: #6c757d;
+  --off-white-color: #dee2e6;
   --orbit: "Orbit";
   --outfit: "Outfit";
 }
@@ -109,10 +110,10 @@ main {
 }
 
 .card {
-  background: var(--white-color);
+  background: var(--off-white-color);
   padding: 25px;
   border-radius: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--grey-color);
   transition: all 0.3s ease;
   min-height: 210px;
   /* min-width:px; */
@@ -240,7 +241,7 @@ nav a {
 .text-box h1 {
   font-family: var(--outfit);
   color: var(--black-color);
-  font-size: 10rem;
+  font-size: 12.5rem;
   font-weight: 250;
 }
 
