@@ -32,6 +32,75 @@ main {
   margin: 1rem 2rem;
 }
 
+/* about section starts*/
+
+#about {
+  padding: 10px 20px;
+  background: var(--white-color);
+  font-family: var(--outfit);
+  margin-top: 3rem;
+}
+
+.about-container {
+  margin-top: 10px ;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+  gap: 60px;
+}
+.intro h2 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+
+
+.intro .tag {
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 9999px;
+  margin-bottom: 10px;
+  border: 2px solid #000;
+  font-weight: 500;
+  background: linear linear-gradient(to right, #000 50%, #fff 50%);
+  color: #000;
+  background-size: 200% 100% ;
+  background-position: right bottom;
+  transition: all 0.4s ease;
+  font-family: var(--outfit);
+}
+.intro .tag:hover {
+  background-position: left bottom;
+  color: #fff;
+}
+iframe {
+  border-radius: 30px;
+  margin-top: 2rem;
+}
+
+.grid {
+  margin-top: 5rem;
+  
+}
+.kuchh-bhi {
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+.kuchh-bhi h1 {
+  font-size: 5rem;
+}
+.noKuchh {
+  margin-top: 5.5rem;
+  margin-left: 2rem;
+}
+.noKuchh h1 {
+
+  font-size: 5rem;
+}
+
+/*about section khatam*/
+
 /* Servise section  */
 /* Section Styling */
 #services {
