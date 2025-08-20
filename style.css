@@ -32,6 +32,71 @@ main {
   margin: 1rem 0rem;
 }
 
+/* about section starts*/
+
+#about {
+  padding: 10px 20px;
+  background: var(--white-color);
+  font-family: var(--outfit);
+  margin-top: 3rem;
+}
+
+.about-container {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+  gap: 60px;
+}
+.intro h2 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.intro .tag {
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 9999px;
+  margin-bottom: 10px;
+  border: 2px solid #000;
+  font-weight: 500;
+  background: linear linear-gradient(to right, #000 50%, #fff 50%);
+  color: #000;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.4s ease;
+  font-family: var(--outfit);
+}
+.intro .tag:hover {
+  background-position: left bottom;
+  color: #fff;
+}
+iframe {
+  border-radius: 30px;
+  margin-top: 2rem;
+}
+
+.grid {
+  margin-top: 5rem;
+}
+.kuchh-bhi {
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+.kuchh-bhi h1 {
+  font-size: 5rem;
+}
+.noKuchh {
+  margin-top: 5.5rem;
+  margin-left: 2rem;
+}
+.noKuchh h1 {
+  font-size: 5rem;
+}
+
+/*about section khatam*/
+
 /* Servise section  */
 /* Section Styling */
 #services {
@@ -78,6 +143,7 @@ main {
 .services-intro h2 {
   font-size: 42px;
   margin: 15px 0;
+  font-weight: 400;
 }
 
 .services-intro p {
@@ -491,4 +557,150 @@ nav a {
   color: var(--grey-color);
   background-color: var(--black-color);
   font-size: 2.5rem;
+}
+
+/* portfolio */
+.parent {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  /* text-align:center; */
+  font-family: var(--outfit);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 9999px;
+  margin-bottom: 10px;
+  border: 2px solid #000;
+  font-weight: 500;
+  background: linear-gradient(to right, #000 50%, #fff 50%);
+  color: #000;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.4s ease;
+  font-family: var(--outfit);
+}
+
+.badge:hover {
+  background-position: left bottom;
+  color: #fff;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 6px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--grey-color);
+  margin-bottom: 40px;
+  line-height: 1.6;
+  font-size: 18px;
+  margin-left: 65rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  justify-content: center;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  border-radius: 12px;
+  aspect-ratio: 4/3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-grid img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial {
+  position: relative;
+  margin-top: 100px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.testimonial::before {
+  content: "“";
+  font-size: 15rem;
+  color: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.testimonial p {
+  text-align: center;
+  font-family: "Georgia", "Times New Roman", serif; /* original classy serif */
+  font-size: 20px; /* thoda bada */
+  font-style: italic; /* testimonial feel */
+  color: #555; /* halka grey, black se soft */
+  line-height: 1.8; /* relaxed spacing */
+  letter-spacing: 0.3px; /* thoda open */
+  margin-bottom: 30px;
+  font-weight: 200;
+}
+
+.testimonial-footer {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  /* text-align: left;    */
+  position: relative; /* line ke liye anchor */
+}
+
+.testimonial footer::before {
+  content: "";
+  position: absolute;
+  top: -20px; /* image ke upar line */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 650px; /* line ki width */
+  height: 2px; /* line ki motai */
+  background: #ccc; /* halka grey line */
+  border-radius: 2px;
+}
+
+.testimonial img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-footer strong {
+  font-weight: bold;
+  display: block;
+}
+
+.testimonial-footer span {
+  font-size: 14px;
+  color: #777;
+  display: block;
 }
