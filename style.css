@@ -236,6 +236,7 @@ nav a {
   flex-direction: column;
   height: 100%;
   width: 60%;
+  padding-bottom: 3rem;
 }
 
 .text-box h1 {
@@ -243,6 +244,7 @@ nav a {
   color: var(--black-color);
   font-size: 12.5rem;
   font-weight: 250;
+  line-height: 1;
 }
 
 .img-box {
